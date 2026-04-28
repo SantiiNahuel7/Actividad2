@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden; 
+}
+
+.contenedor-cv {
+    display: block;
+    width: 80%; 
+    min-height: 100vh; 
+    margin: 0 auto; 
+    background-color: #e8e8e8;
+    padding: 4rem; 
+    border-left: 0.1rem solid #000;
+    border-right: 0.1rem solid #000;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.datos-personales p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.caja-imagen {
+    width: 12vw;
+    height: 12vw;
+    background-color: #a0a0a0;
+    border: 0.1rem solid #333;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 20rem;
+    height: 20rem;
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.seccion {
+    margin-bottom: 3rem;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #888888; 
+    overflow-x: hidden; 
+}
+
+.contenedor-principal {
+    width: 80%;
+    height: 100vh; 
+    margin: 0 auto; 
+    background-color: #ffffff;
+    border-left: 0.15rem solid #000;
+    border-right: 0.15rem solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera-fija, .pie-fijo {
+    flex-shrink: 0; 
+    background-color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 0.15rem solid #333;
+}
+
+.pie-fijo {
+    border-top: 0.15rem solid #333;
+    border-bottom: none;
+}
+
+.cabecera-fija nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+.cabecera-fija nav a:hover {
+    text-decoration: underline;
+}
+
+.contenido-contacto {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.caja-formulario {
+    background-color: #f0f0f0;
+    border: 0.1rem solid #333;
+    padding: 3rem 4rem;
+    width: 70%; 
+}
+
+.fila-form {
+    display: grid;
+    grid-template-columns: 6rem 1fr; 
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.fila-form-mensaje {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    align-items: start; 
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+input {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border: 0.1rem solid #333;
+    width: 100%;
+}
+
+textarea {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border: 0.1rem solid #333;
+    width: 100%;
+    height: 15vh; 
+    resize: none; 
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 0.6rem 2.5rem;
+    border: 0.1rem solid #333;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-enviar {
+    background-color: #cce5ff; 
+    color: #000;
+}
+
+.btn-cancelar {
+    background-color: #f8d7da; 
+    color: #000;
+}
+
+button:hover {
+    opacity: 0.8;
+}
